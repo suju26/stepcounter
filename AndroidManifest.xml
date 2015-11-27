@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.stepcounter" >
+
+    <uses-feature android:name="andriod.hardware.sensor.stepcounter" />
+    <uses-feature android:name="andriod.hardware.sensor.stepdetector" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="StepCounterDemo"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="StepCounterDemo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CalorieActivity"
+            android:label="@string/title_activity_calorie" >
+        </activity>
+        <activity
+            android:name=".Result"
+            android:label="@string/title_activity_result" >
+        </activity>
+    </application>
+
+</manifest>
