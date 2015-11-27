@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view1" android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignTop="@id/text_current_playback_title" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="bottom" android:id="@id/textView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/label_tdee" android:layout_weight="1.0" />
+        <EditText android:id="@id/macro_tdee" android:layout_width="0.0dip" android:layout_height="wrap_content" android:ems="10" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="number" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" " />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_horizontal" android:id="@id/textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/label_goal" />
+    <Spinner android:layout_gravity="center_horizontal" android:id="@id/macro_goal_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/macro_goal_section_calculated" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_horizontal" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_goal_calories" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/result_color" android:layout_gravity="center_horizontal" android:id="@id/macro_goal_calories_calculated" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/macro_goal_section_manual" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="bottom" android:id="@id/textView6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/label_goal_calories" android:layout_weight="2.0" />
+            <EditText android:layout_gravity="bottom" android:id="@id/macro_goal_calories_manual" android:layout_width="0.0dip" android:layout_height="wrap_content" android:ems="10" android:selectAllOnFocus="true" android:layout_weight="2.0" android:inputType="number" />
+            <ImageButton android:id="@id/button_goal_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_help" android:layout_weight="0.0" style="?android:attr/borderlessButtonStyle" />
+        </LinearLayout>
+        <Button android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/macro_calculate_goal" android:background="#ff33b5e5" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/label_calculate" />
+    </LinearLayout>
+</LinearLayout>

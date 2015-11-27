@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/card_parent_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <it.gmariotti.cardslib.library.view.CardView android:id="@id/fit_report_bmi_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" />
+        <it.gmariotti.cardslib.library.view.CardView android:id="@id/fit_report_bmr_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" />
+        <it.gmariotti.cardslib.library.view.CardView android:id="@id/fit_report_ideal_weight_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" />
+        <it.gmariotti.cardslib.library.view.CardView android:id="@id/fit_report_heart_rate_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" />
+    </LinearLayout>
+</ScrollView>

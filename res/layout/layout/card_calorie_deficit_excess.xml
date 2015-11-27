@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/card_parent_layout" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view1" android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignTop="@id/text_current_playback_title" />
+    <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="bottom" android:id="@id/textView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/label_goal_weight" android:layout_weight="1.0" />
+        <EditText android:id="@id/cal_def_goal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:ems="10" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="numberDecimal" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="bottom" android:id="@id/textView2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/label_time_period" android:layout_weight="1.0" />
+        <EditText android:id="@id/cal_def_days" android:layout_width="0.0dip" android:layout_height="wrap_content" android:ems="10" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/cal_def_calculate" android:background="#ff33b5e5" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/label_calculate" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/cal_def_resultSection" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_horizontal" android:id="@id/cal_def_deficit_excess" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Medium Text" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/result_color" android:layout_gravity="center_horizontal" android:id="@id/cal_def_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Large Text" />
+        <LinearLayout android:orientation="vertical" android:id="@id/cal_def_tdee_section" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_goal_cal_tdee" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/result_color" android:layout_gravity="center_horizontal" android:id="@id/cal_def_goal_tdee_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Large Text" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/red_light" android:layout_gravity="center_horizontal" android:id="@id/cal_def_advisory" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_goal_cal_too_low" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
